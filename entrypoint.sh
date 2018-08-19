@@ -35,7 +35,7 @@ ls -lah $DIR/
 echo "Initialization completed successfully"
 
 # Start the cron daemon
-/usr/sbin/crond -f -l 8
+sudo /usr/sbin/crond -f -l 8
 
 # Replace Startup Variables
 MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
