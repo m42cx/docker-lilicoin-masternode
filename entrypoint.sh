@@ -1,7 +1,10 @@
-#!/bin/bash
+#!/bin/ash
 set -x
 
-EXECUTABLE=/opt/terracoin/bin/terracoind
+cd /home/container
+
+export INTERNAL_IP=`ip route get 1 | awk '{print $NF;exit}'`
+
 DIR=$HOME/.terracoincore
 FILENAME=terracoin.conf
 FILE=$DIR/$FILENAME
@@ -31,4 +34,13 @@ ls -lah $DIR/
 
 echo "Initialization completed successfully"
 
-exec $EXECUTABLE
+# Start the cron daemon
+/usr/sbin/crond -f -l 8
+
+# Replace Startup Variables
+MODIFIED_STARTUP=`eval echo $(echo ${STARTUP} | sed -e 's/{{/${/g' -e 's/}}/}/g')`
+echo ":/home/container$ ${MODIFIED_STARTUP}"
+
+# Run the Server
+eval ${MODIFIED_STARTUP}
+

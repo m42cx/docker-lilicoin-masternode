@@ -1,2 +1,3 @@
-/official-images
 .idea
+build-docker-image.sh
+
