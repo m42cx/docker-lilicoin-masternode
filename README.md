@@ -1,11 +1,11 @@
-terracoin masternode for docker
+lilicoin masternode for docker
 ===================
 
-Docker image that runs the terracoin daemon which can be turned into a masternode with the correct configuration.
+Docker image that runs the lilicoin daemon which can be turned into a masternode with the correct configuration.
 
-This image also runs [sentinel](https://github.com/terracoin/sentinel) (which is required for a masternode to get rewards) every minute as a cron job.
+This image also runs [sentinel](https://github.com/lilicoin/sentinel) (which is required for a masternode to get rewards) every minute as a cron job.
 
-If you like this image, buy me a coffee ;) 1GuggerownoWdKkMUA8C2ySkA8AK7Ucn7n
+If you like this image, buy me a coffee ;) 
 
 Quick Start
 -----------
@@ -19,12 +19,12 @@ docker run \
   guggero/terracoin
 ```
 
-This will create the folder `.terracoincore` in `/some/directory` with a bare `terracoin.conf`. You might want to edit the `terracoin.conf` before running the container because with the bare config file it doesn't do much, it's basically just an empty wallet.
+This will create the folder `.terracoincore` in `/some/directory` with a bare `lilicoin.conf`. You might want to edit the `lilicoin.conf` before running the container because with the bare config file it doesn't do much, it's basically just an empty wallet.
 
 Start as masternode
 ------------
 
-To start the masternode functionality, edit your terracoin.conf (should be in /some/directory/.terracoin/ following the docker run command example above):
+To start the masternode functionality, edit your terracoin.conf (should be in /some/directory/.lilicoin/ following the docker run command example above):
 
 ```
 rpcuser=<SOME LONG RANDOM USER NAME>
