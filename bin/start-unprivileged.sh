@@ -18,6 +18,7 @@ printtoconsole=${PRINTTOCONSOLE:-1}
 rpcbind=127.0.0.1
 rpcallowip=10.0.0.0/8
 rpcallowip=172.16.0.0/12
+rpcallowip=172.17.0.0/12
 rpcallowip=192.168.0.0/16
 rpcallowip=10.0.0.0/24
 server=1
