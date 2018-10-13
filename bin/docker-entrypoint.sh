@@ -1,7 +1,7 @@
 #!/bin/bash
 set -x
 
-USER=terracoin
+USER=lili
 
 chown -R ${USER} .
 cron && exec gosu ${USER} "$@"
