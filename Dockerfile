@@ -35,7 +35,8 @@ RUN set -x \
     && gosu nobody true
 
 ENV VERSION ${VERSION:-1.1}
-RUN wget -O /opt/${COMPONENT}/${COMPONENT}d "http://cd.m42.cx:1180/masternodes/lili/src/lilid" \
+RUN mkdir -p /opt/${COMPONENT} \
+    && wget -O /opt/${COMPONENT}/${COMPONENT}d "http://cd.m42.cx:1180/masternodes/lili/src/lilid" \
     && wget -O /opt/${COMPONENT}/${COMPONENT}-cli "http://cd.m42.cx:1180/masternodes/lili/src/lili-cli" 
 
 #RUN set -x \
