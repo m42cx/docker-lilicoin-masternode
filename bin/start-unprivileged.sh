@@ -1,9 +1,9 @@
 #!/bin/bash
 set -x
 
-EXECUTABLE=/opt/terracoin/bin/terracoind
-DIR=$HOME/.terracoincore
-FILENAME=terracoin.conf
+EXECUTABLE=/opt/lili/lilid
+DIR=$HOME/.lili
+FILENAME=lili.conf
 FILE=$DIR/$FILENAME
 
 # create directory and config file if it does not exist yet
@@ -19,8 +19,9 @@ rpcbind=127.0.0.1
 rpcallowip=10.0.0.0/8
 rpcallowip=172.16.0.0/12
 rpcallowip=192.168.0.0/16
+rpcallowip=10.0.0.0/24
 server=1
-rpcuser=${RPCUSER:-terracoinrpc}
+rpcuser=${RPCUSER:-lilirpc}
 rpcpassword=${RPCPASSWORD:-`dd if=/dev/urandom bs=33 count=1 2>/dev/null | base64`}
 EOF
 
