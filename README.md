@@ -15,7 +15,7 @@ docker run \
   -p 13333:13333 \
   -v /some/directory:/terracoin \
   --name=lili \
-  m42cx/lilicoin
+  m42cx/docker-lilicoin-masternode
 ```
 
 This will create the folder `.terracoincore` in `/some/directory` with a bare `lilicoin.conf`. You might want to edit the `lilicoin.conf` before running the container because with the bare config file it doesn't do much, it's basically just an empty wallet.
