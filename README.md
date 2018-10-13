@@ -3,9 +3,8 @@ lilicoin masternode for docker
 
 Docker image that runs the lilicoin daemon which can be turned into a masternode with the correct configuration.
 
-This image also runs [sentinel](https://github.com/lilicoin/sentinel) (which is required for a masternode to get rewards) every minute as a cron job.
+donate: 13h7w3tc4xNEAv97Dr2i2ceSwnRkMcZDXE 
 
-If you like this image, buy me a coffee ;) 
 
 Quick Start
 -----------
@@ -15,8 +14,8 @@ docker run \
   -d \
   -p 13333:13333 \
   -v /some/directory:/terracoin \
-  --name=terracoin \
-  guggero/terracoin
+  --name=lili \
+  m42cx/lilicoin
 ```
 
 This will create the folder `.terracoincore` in `/some/directory` with a bare `lilicoin.conf`. You might want to edit the `lilicoin.conf` before running the container because with the bare config file it doesn't do much, it's basically just an empty wallet.
