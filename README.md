@@ -39,6 +39,6 @@ masternodeprivkey=<MASTERNODE PRIVATE KEY>
 ```
 
 Where `<SERVER IP ADDRESS>` is the public facing IPv4 or IPv6 address that the masternode will be reachable at.
-Don't forget to put your IPv6 address in brackets! For example `[aaaa:bbbb:cccc::0]:51472`
+Don't forget to put your IPv6 address in brackets! For example `[aaaa:bbbb:cccc::0]:44100`
 
 `<MASTERNODE PRIVATE KEY>` is the private key that you generated earlier (with `terracoin-cli masternode genkey`).
