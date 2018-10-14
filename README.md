@@ -12,7 +12,7 @@ Quick Start
 ```bash
 docker run \
   -d \
-  -p 13333:13333 \
+  -p 44100:44100 \
   -v /some/directory:/lili \
   --name=lili \
   m42cx/docker-lilicoin-masternode
