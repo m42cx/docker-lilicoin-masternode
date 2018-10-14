@@ -30,7 +30,7 @@ RUN set -x \
     && rm -r "$GNUPGHOME" /usr/local/bin/gosu.asc \
     && chmod +x /usr/local/bin/gosu \
     && apt-add-repository ppa:bitcoin/bitcoin \
-    && apt-get update && apt-get install -y libdb4.8-dev libdb4.8++-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libzmq3-dev libevent-pthreads-2.0-5 libminiupnpc-dev \
+     && apt-get update && apt-get install -y libdb4.8-dev libdb4.8++-dev libzmq3-dev libminiupnpc-dev libprotobuf-dev protobuf-compiler libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev libboost-all-dev libssl-dev libgmp3-dev libevent-dev\
     && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* \
     && gosu nobody true
 
