@@ -13,7 +13,7 @@ Quick Start
 docker run \
   -d \
   -p 13333:13333 \
-  -v /some/directory:/terracoin \
+  -v /some/directory:/lili \
   --name=lili \
   m42cx/docker-lilicoin-masternode
 ```
