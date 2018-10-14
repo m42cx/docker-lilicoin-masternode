@@ -52,7 +52,7 @@ RUN mkdir -p /opt/${COMPONENT} \
 #    && chmod 0644 /etc/cron.d/sentinel \
 #    && touch /var/log/cron.log
 
-EXPOSE 13333 13332
+EXPOSE 44100 44101
 
 VOLUME ["${HOME}"]
 WORKDIR ${HOME}
