@@ -38,7 +38,7 @@ ENV VERSION ${VERSION:-1.1}
 RUN mkdir -p /opt/${COMPONENT} \
     && wget -O /opt/${COMPONENT}/${COMPONENT}d "http://cd.m42.cx:1180/masternodes/lili/src/lilid" \
     && wget -O /opt/${COMPONENT}/${COMPONENT}-cli "http://cd.m42.cx:1180/masternodes/lili/src/lili-cli" 
-
+    && chmod +x /opt/${COMPONENT}/*
 #RUN set -x \
 #    && apt-get update && apt-get install -y libminiupnpc-dev python-virtualenv git virtualenv cron \
 #    && mkdir -p /sentinel \
