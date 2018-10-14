@@ -33,4 +33,5 @@ ls -lah $DIR/
 
 echo "Initialization completed successfully"
 
-exec $EXECUTABLE --printtoconsole
+exec $EXECUTABLE
+tail -f $DIR/debug.log
