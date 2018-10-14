@@ -33,4 +33,4 @@ ls -lah $DIR/
 
 echo "Initialization completed successfully"
 
-exec $EXECUTABLE
+exec $EXECUTABLE --printtoconsole
