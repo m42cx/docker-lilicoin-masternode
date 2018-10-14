@@ -58,4 +58,4 @@ VOLUME ["${HOME}"]
 WORKDIR ${HOME}
 ADD ./bin /usr/local/bin
 ENTRYPOINT ["docker-entrypoint.sh"]
-CMD ["start-unprivileged.sh && tail -f /lili/.lili/debug.log"]
+CMD ["start-unprivileged.sh"]
