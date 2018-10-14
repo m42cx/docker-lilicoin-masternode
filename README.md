@@ -34,7 +34,7 @@ logtimestamps=1
 maxconnections=256
 printtoconsole=1
 masternode=1
-masternodeaddr=<SERVER IP ADDRESS>:51472
+masternodeaddr=<SERVER IP ADDRESS>:44100
 masternodeprivkey=<MASTERNODE PRIVATE KEY>
 ```
 
